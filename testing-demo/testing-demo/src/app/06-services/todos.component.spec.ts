@@ -23,7 +23,6 @@ describe('TodosComponent', () => {
 
     spyOn(service, 'getTodos').and.callFake(() => {
       return Observable.from([todos]);
-
       component.ngOnInit();
       //expect(component.todos.length).toBe(3);
       // expects(component.todos.length).toBeGreaterThan(0);
